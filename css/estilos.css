@@ -94,7 +94,7 @@ a:hover {
 
 @keyframes animacaoTitulo {
   from {
-    transform: scale(0.2) translateY(50vh);
+    transform: scale(0.8) translateY(20vh);
     opacity: 0;
   }
   to {
@@ -149,6 +149,12 @@ a:hover {
   font-size: 2em;
 }
 
+.sobre, .portfolio, .contato {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2em;
+  border-radius: 10px; 
+}
+
 .sobre p {
   color: white;
   text-indent: 1.4em;
@@ -197,6 +203,26 @@ a:hover {
 
 }
 
+.site-subtitle {
+  color: #f0f0f0; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 600px) {
+  .site-title {
+    font-size: 2.5em;
+  }
+  .site-subtitle {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre, .portfolio, .contato {
+    padding: 1em;
+  }
+}
+
 
 .portfolio .grid {
   display: grid;
@@ -226,6 +252,7 @@ a:hover {
 
 .flip-card:hover .card {
   transform: rotateY(180deg);
+  transition: transform 0.6s;
 }
 
 .card {
@@ -289,4 +316,25 @@ a:hover {
   text-decoration: none;
   text-shadow: 0px 0px 10px rgba(255,255,255,.5);
 }
+
+.sobre ul {
+  list-style-type: disc; 
+  margin-left: 2em; 
+  margin-bottom: 1.4em; 
+}
+
+.sobre ul li {
+  color: white; 
+  text-align: justify; 
+  margin-bottom: 0.5em; 
+}
+
+.sobre ul li strong {
+  color: teal; 
+}
+
+.sobre p, .sobre ul {
+  margin-left: 1.4em;
+}
+
 
